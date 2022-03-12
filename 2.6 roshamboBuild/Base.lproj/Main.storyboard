@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PlayVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__6_roshamboBuild" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="PlayVC" customClass="ViewController" customModule="__6_roshamboBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="klb-UE-zku" userLabel="oneVerticalStack">
-                                <rect key="frame" x="10" y="50" width="355" height="577"/>
+                                <rect key="frame" x="10" y="50" width="300" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-we-Oep" userLabel="imagesHorizontalStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="551.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="324.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-S6-ROP" userLabel="rock">
-                                                <rect key="frame" x="0.0" y="0.0" width="112.5" height="551.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="324.5"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="rockBig">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
+                                                <buttonConfiguration key="configuration" style="plain" image="rock">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="rockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqB-2w-Fnz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iz0-ep-YtV" userLabel="paper">
-                                                <rect key="frame" x="112.5" y="0.0" width="130" height="551.5"/>
+                                                <rect key="frame" x="80" y="0.0" width="140" height="324.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="130" id="doh-TR-CxD"/>
+                                                    <constraint firstAttribute="width" constant="140" id="em1-ST-dh8"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="paperBig"/>
+                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="paper"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6m-9F-hnd" userLabel="scissors">
-                                                <rect key="frame" x="242.5" y="0.0" width="112.5" height="551.5"/>
+                                                <rect key="frame" x="220" y="0.0" width="80" height="324.5"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="scissorsBig"/>
+                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="scissors"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -47,10 +55,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFQ-B0-Qvf">
-                                        <rect key="frame" x="0.0" y="551.5" width="355" height="25.5"/>
+                                        <rect key="frame" x="0.0" y="324.5" width="300" height="25.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock Paper Scissors Go..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s32-Su-H3y">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="25.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -65,7 +73,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="klb-UE-zku" secondAttribute="trailing" constant="10" id="J7g-rn-XLR"/>
                             <constraint firstItem="klb-UE-zku" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="X8T-eg-LUn"/>
-                            <constraint firstItem="klb-UE-zku" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-40" id="nyH-iy-tzN"/>
+                            <constraint firstItem="klb-UE-zku" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-80" id="nyH-iy-tzN"/>
                             <constraint firstItem="klb-UE-zku" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="s7d-mA-GSU"/>
                         </constraints>
                     </view>
@@ -74,15 +82,55 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--Result Rps View Controller-->
+        <!--ResultVC-->
         <scene sceneID="MFP-NS-02S">
             <objects>
-                <viewController id="P0C-pj-XgQ" customClass="ResultRpsViewController" customModule="__6_roshamboBuild" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P0C-pj-XgQ" userLabel="ResultVC" customClass="ResultVC" customModule="__6_roshamboBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Sv-KL-NT4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ykN-B0-xOI" userLabel="oneVerticalStack">
+                                <rect key="frame" x="10" y="50" width="300" height="350"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7E-fG-Sgg">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="162.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXD-TO-orH">
+                                        <rect key="frame" x="0.0" y="162.5" width="300" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label to reflect result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0P-f0-PX2">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfy-tP-6C8">
+                                        <rect key="frame" x="0.0" y="188" width="300" height="162"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rE-gJ-lS0">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="162"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Play again"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VXD-TO-orH" firstAttribute="centerY" secondItem="ykN-B0-xOI" secondAttribute="centerY" id="eze-ca-Zwh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O0l-sg-hIe"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O0l-sg-hIe" firstAttribute="bottom" secondItem="ykN-B0-xOI" secondAttribute="bottom" constant="80" id="3A9-YK-hvl"/>
+                            <constraint firstItem="ykN-B0-xOI" firstAttribute="leading" secondItem="O0l-sg-hIe" secondAttribute="leading" constant="10" id="Heg-cW-iCA"/>
+                            <constraint firstItem="ykN-B0-xOI" firstAttribute="top" secondItem="O0l-sg-hIe" secondAttribute="top" constant="50" id="Xf2-4r-8dL"/>
+                            <constraint firstItem="O0l-sg-hIe" firstAttribute="trailing" secondItem="ykN-B0-xOI" secondAttribute="trailing" constant="10" id="dQl-jn-7V8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Xb-wO-u0z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -91,8 +139,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="paperBig" width="200" height="200"/>
+        <image name="paper" width="100" height="100"/>
+        <image name="rock" width="100" height="100"/>
         <image name="rockBig" width="200" height="200"/>
-        <image name="scissorsBig" width="200" height="200"/>
+        <image name="scissors" width="100" height="100"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>
