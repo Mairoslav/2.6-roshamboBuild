@@ -7,13 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// MARK: PlayRpsController: UIViewController
+
+class PlayRpsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    // Randomly generates a Int from 1 to 3 for Rock, Paper or Scisorrs
+    /*
+    func randomRps() -> Int {
+        
+    }
+    */
 }
 
