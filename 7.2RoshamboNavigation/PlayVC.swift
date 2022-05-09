@@ -29,6 +29,7 @@ class PlayVC: UIViewController {
     // MARK: for scissors purely Triggered Segue attached to the button in Storyboard i.e. no code
     
     // MARK: Segue (any from 3 types)
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "play" {
             let vc = segue.destination as! ResultVC
