@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44C2B5DB27DCA9B900292145 /* 2.6 roshamboBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2.6 roshamboBuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C2B5DB27DCA9B900292145 /* 7.2RoshamboNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7.2RoshamboNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C2B5DE27DCA9B900292145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C2B5E027DCA9B900292145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		44C2B5E227DCA9B900292145 /* PlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		44C2B5D227DCA9B900292145 = {
 			isa = PBXGroup;
 			children = (
-				44C2B5DD27DCA9B900292145 /* 2.6 roshamboBuild */,
+				44C2B5DD27DCA9B900292145 /* 7.2RoshamboNavigation */,
 				44C2B5DC27DCA9B900292145 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		44C2B5DC27DCA9B900292145 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44C2B5DB27DCA9B900292145 /* 2.6 roshamboBuild.app */,
+				44C2B5DB27DCA9B900292145 /* 7.2RoshamboNavigation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44C2B5DD27DCA9B900292145 /* 2.6 roshamboBuild */ = {
+		44C2B5DD27DCA9B900292145 /* 7.2RoshamboNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				44C2B5DE27DCA9B900292145 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				44C2B5E927DCA9BA00292145 /* LaunchScreen.storyboard */,
 				44C2B5EC27DCA9BA00292145 /* Info.plist */,
 			);
-			path = "2.6 roshamboBuild";
+			path = 7.2RoshamboNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44C2B5DA27DCA9B900292145 /* 2.6 roshamboBuild */ = {
+		44C2B5DA27DCA9B900292145 /* 7.2RoshamboNavigation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C2B5EF27DCA9BA00292145 /* Build configuration list for PBXNativeTarget "2.6 roshamboBuild" */;
+			buildConfigurationList = 44C2B5EF27DCA9BA00292145 /* Build configuration list for PBXNativeTarget "7.2RoshamboNavigation" */;
 			buildPhases = (
 				44C2B5D727DCA9B900292145 /* Sources */,
 				44C2B5D827DCA9B900292145 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = "2.6 roshamboBuild";
+			name = 7.2RoshamboNavigation;
 			productName = "2.6 roshamboBuild";
-			productReference = 44C2B5DB27DCA9B900292145 /* 2.6 roshamboBuild.app */;
+			productReference = 44C2B5DB27DCA9B900292145 /* 7.2RoshamboNavigation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 44C2B5D627DCA9B900292145 /* Build configuration list for PBXProject "2.6 roshamboBuild" */;
+			buildConfigurationList = 44C2B5D627DCA9B900292145 /* Build configuration list for PBXProject "7.2RoshamboNavigation" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44C2B5DA27DCA9B900292145 /* 2.6 roshamboBuild */,
+				44C2B5DA27DCA9B900292145 /* 7.2RoshamboNavigation */,
 			);
 		};
 /* End PBXProject section */
@@ -295,7 +295,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BFXL43VVT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "2.6 roshamboBuild/Info.plist";
+				INFOPLIST_FILE = 7.2RoshamboNavigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BFXL43VVT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "2.6 roshamboBuild/Info.plist";
+				INFOPLIST_FILE = 7.2RoshamboNavigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44C2B5D627DCA9B900292145 /* Build configuration list for PBXProject "2.6 roshamboBuild" */ = {
+		44C2B5D627DCA9B900292145 /* Build configuration list for PBXProject "7.2RoshamboNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C2B5ED27DCA9BA00292145 /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C2B5EF27DCA9BA00292145 /* Build configuration list for PBXNativeTarget "2.6 roshamboBuild" */ = {
+		44C2B5EF27DCA9BA00292145 /* Build configuration list for PBXNativeTarget "7.2RoshamboNavigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C2B5F027DCA9BA00292145 /* Debug */,
