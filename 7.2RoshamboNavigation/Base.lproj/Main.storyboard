@@ -59,7 +59,6 @@
                                                 <state key="normal" title="Paper" image="paper"/>
                                                 <connections>
                                                     <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAj-0S-e7e"/>
-                                                    <segue destination="P0C-pj-XgQ" kind="show" identifier="play" id="wCh-D8-sXS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6m-9F-hnd" userLabel="Scissors">
@@ -101,6 +100,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ynL-Cv-vhW"/>
+                    <connections>
+                        <segue destination="P0C-pj-XgQ" kind="show" identifier="goWithPaper" id="OCt-Bl-X54"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +189,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wCh-D8-sXS"/>
+        <segue reference="OCt-Bl-X54"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paper" width="100" height="100"/>

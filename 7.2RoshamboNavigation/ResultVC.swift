@@ -60,6 +60,23 @@ class ResultVC: UIViewController {
     
     // MARK: Actions
     @IBAction private func playAgain() {
-        dismiss(animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.popViewController(animated: true)
+        } // When a view is presented via push, another method should be used. I modified playAgain so it behaves like you need*
+        dismiss(animated: true, completion: nil) // only dismisses a view, which means only views presented modally will be dismissed
     }
 }
+
+// *Another question from MENTOR HELP: after choosing rock, the button play again works and throws me back to 1st screen. However for paper and scissors there is a back option that works instead. How can I employ button play again for all 3 options?
+
+/*
+ 10. Intro to Rock Paper Scissors
+ In lesson three, we wrote the rock, paper, scissors app and we used three different techniques to present the ResultViewController. One for each of these three options:
+    1. for Rock: Code only
+    2. for Paper: Storyboard Segue triggered using Code
+    3. for Scissors: Triggered Segue attached to the button in Storyboard.
+ 
+ In MakeYourOwnAdventure App, the Segues have all been of this 3rd kind. We have attached the Segues directly to the buttons using a pop-up connections menu in storyboard.
+ */
+
+//  10. Intro to Rock Paper Scissors (0:37) POINT QUESTION: What it would take to reproduce the three segues in rock, paper, scissors using a NavigationController instead of modal presentation***?
